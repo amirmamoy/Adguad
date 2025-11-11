@@ -1,37 +1,19 @@
-# Nama Proyek
+### 📚 Dokumentasi Adguad Home Server
+Version 1.0 • last update : 2025
+## 📋 DAFTAR ISI
+- [Overview](#overview)
+- [Spesifikasi server](#spesifikasi-server)
+- [Konfigurasi DNS](#konfigurasi-dns)
+- [Filter list](#filter-list)
+- [Monitoring dan statistik](#monitoring-statistik)
+- [Troubleshooting](#troubleshooting)
+- [Backup & Maintenance](#backup-maintenance)
 
-Singkatnya: projek kece yang kamu bikin. ✨
-
-## Daftar Isi
-- [Deskripsi](#deskripsi)
-- [Fitur](#fitur)
-  - [Fitur Utama](#fitur-utama)
-  - [Fitur Tambahan](#fitur-tambahan)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
-
-## Deskripsi
-Penjelasan singkat proyek...
-
-## Fitur
-### Fitur Utama
-- poin 1
-- poin 2
-
-### Fitur Tambahan
-- poin A
-- poin B
-
-## Instalasi
-Langkah instalasi...
-
-## Penggunaan
-Cara pakainya...
-
-## Kontribusi
-Cara kontribusi...
-
-## Lisensi
-MIT © Nama Kamu
+## 🏠 Overview 
+# informasi server
+```text
+📍 Alamat Server: 192.168.0.103
+🌐 Web Admin: http://192.168.0.103:3000
+🔧 DNS Port: 53
+📊 Status: Active & Optimal
+```
