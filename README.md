@@ -19,12 +19,15 @@ Version 1.0 • last update: 2025
 - [Monitoring dan Statistik](#monitoring-dan-statistik)
 - [Troubleshooting](#troubleshooting)
 - [Backup Dan Maintenance](#backup-dan-maintenance)
+- [Security Setting](#security-setting)
+- [Client Configuration](#client-configuration)
+- [Logs File Location](#logs-file-location)
 
 ---
 
 ## 🏠 Overview
 
-## Informasi Server
+### Informasi Server
 ```txt
 📍 Alamat Server: 192.168.0.103
 🌐 Web Admin: http://192.168.0.103:3000
@@ -239,5 +242,6 @@ Secondary DNS: 1.1.1.1 (fallback)
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
 
 
