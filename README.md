@@ -14,14 +14,14 @@ Version 1.0 • last update: 2025
 
 ## 🏠 Overview
 
-### Informasi Server
+## Informasi Server
 ```txt
 📍 Alamat Server: 192.168.0.103
 🌐 Web Admin: http://192.168.0.103:3000
 🔧 DNS Port: 53
 📊 Status: Active & Optimal
 ```
-### Purpose
+## Purpose
 AdGuard Home berfungsi sebagai:
 + ✅ DNS Server jaringan lokal
 + ✅ Pemblokir iklan & tracker
@@ -30,14 +30,14 @@ AdGuard Home berfungsi sebagai:
 + ✅ DNS over HTTPS resolver
 
 ## ⚙️ Spesifikasi Server
-### Hardware 
+## Hardware 
 ```text
 OS: Armbian
 Architecture: ARM
 Storage: > 10GB available
 RAM: > 1GB recommended
 ```
-### Software 
+## Software 
 ```text
 AdGuard Home: Latest version
 Service: systemd managed
@@ -46,19 +46,19 @@ Data Path: /opt/AdGuardHome/data/
 ```
 
 ## 🔧 Konfigurasi DNS
-### Upstream DNS Servers
+## Upstream DNS Servers
 ```text
 tls://dns.google
 tls://1dot1dot1dot1.cloudflare-dns.com
 tls://dns.quad9.net
 ```
-### Bootstrap DNS
+## Bootstrap DNS
 ```text
 8.8.8.8
 1.1.1.1
 9.9.9.9
 ```
-### DNS Setting 
+## DNS Setting 
 ```text
 dns:
   bind_hosts: [0.0.0.0]
@@ -73,7 +73,7 @@ dns:
   rate_limit: 20
 ```
 ## 🛡️ Filter List
-### Active Blocklist
+## Active Blocklist
 ```text
 ✓ https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 ✓ https://small.oisd.nl/
@@ -84,7 +84,7 @@ dns:
 + Interval: 24 jam
 + Auto-update: Enabled
 + Last update: (check web interface)
-### Custom filtering rules
+## Custom filtering rules
 ```text
 # Tambahan rules khusus jika diperlukan
 ||doubleclick.net^
@@ -92,26 +92,26 @@ dns:
 ||googlesyndication.com^
 ```
 ## 📊 Monitoring dan Statistik
-### Performance Metrics
+## Performance Metrics
 ```text
 📈 Total Queries: 958
 🚫 Blocked Queries: 452
 🎯 Block Rate: 47.2%
 ⚡ Avg Response Time: <50ms
 ```
-### Access Monitoring 
+## Access Monitoring 
 1. Dasboard: http//192.168.0.103:3000
 2. Query log: Real-time monitoring
 3. Statistics: Historical data (7 hari retention)
 4. Filtering Log: Blocked domains detail
-### Critical Metrics to Monitor
+## Critical Metrics to Monitor
 + ✅ DNS response time < 100ms
 + ✅ Block rate 40-50%
 + ✅ Memory usage < 80%
 + ✅ Uptime 99%
 ## 🚨 Troubleshooting
-### Common Issues & Solutions
-### ❌ Internet Tidak Connect
+## Common Issues & Solutions
+## ❌ Internet Tidak Connect
 ```bash
 # Cek service status
 sudo systemctl status AdGuardHome
@@ -122,7 +122,7 @@ nslookup google.com 192.168.0.103
 # Restart service
 sudo systemctl restart AdGuardHome
 ```
-### ❌ Client Tidak Bisa Access
+## ❌ Client Tidak Bisa Access
 ```bash
 # Cek firewall
 sudo ufw status
@@ -132,7 +132,7 @@ telnet 192.168.0.103 53
 
 # Cek client DNS settings
 ```
-### ❌ Web Interface Tidak Bisa Di Akses 
+## ❌ Web Interface Tidak Bisa Di Akses 
 ```bash
 # Cek port 3000
 sudo netstat -tulpn | grep :3000
@@ -140,7 +140,7 @@ sudo netstat -tulpn | grep :3000
 # Restart service
 sudo systemctl restart AdGuardHome
 ```
-### Diagnostic Commands
+## Diagnostic Commands
 ```bash
 # Service status
 sudo systemctl status AdGuardHome
@@ -157,7 +157,7 @@ ip addr show
 ping 8.8.8.8
 ```
 ## 📑 Backup Dan Maintenance 
-### Backup Configuration
+## Backup Configuration
 ```bash
 #!/bin/bash
 # backup-adguard.sh
@@ -166,12 +166,12 @@ sudo tar -czf /backup/adguard-backup-$DATE.tar.gz /opt/AdGuardHome/
 sudo cp /opt/AdGuardHome/AdGuardHome.yaml /backup/AdGuardHome.yaml.$DATE
 echo "Backup completed: adguard-backup-$DATE.tar.gz"
 ```
-### Auto Backup Schedule 
+## Auto Backup Schedule 
 ```bash
 # Tambah di crontab
 0 2 * * * /path/to/backup-adguard.sh
 ```
-### Update Procedure 
+## Update Procedure 
 ```bash
 # Manual update
 sudo /opt/AdGuardHome/AdGuardHome -s update
@@ -180,7 +180,7 @@ sudo systemctl restart AdGuardHome
 # Auto update (via script)
 curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -c
 ```
-### Restore Procedure 
+## Restore Procedure 
 ```bash
 # Stop service
 sudo systemctl stop AdGuardHome
@@ -192,11 +192,11 @@ sudo tar -xzf adguard-backup-YYYYMMDD.tar.gz -C /
 sudo systemctl start AdGuardHome
 ```
 ## 🔐 Security Setting 
-### Web Admin Security 
+## Web Admin Security 
 + ✅ Password protected
 + ✅ Local network access only
 + ✅ Session timeout enabled
-### Network Security
+## Network Security
 ```bash
 sudo ufw allow 53/tcp
 sudo ufw allow 53/udp
@@ -206,26 +206,27 @@ sudo ufw allow 3000/tcp
 + ✅ Query log retention: 7 hari
 + ✅ Anonymize client IP: Enabled
 + ✅ No personal data collection
-### 📱 Client Configuration
+## 📱 Client Configuration
 ### Manual DNS Setup
 ```bash
 DNS Server: 192.168.0.103
 ```
-### Router Setup
+## Router Setup
 ```bash
 Primary DNS: 192.168.0.103
 Secondary DNS: 1.1.1.1 (fallback)
 ```
-### Supported Clients
+## Supported Clients
 
 + ✅ Windows/Mac/Linux
 + ✅ Android/iOS
 + ✅ Smart TVs
 + ✅ IoT Devices
 
-### Logs File Location 
+## Logs File Location 
 ```bash
 /opt/AdGuardHome/data/querylog.json
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
