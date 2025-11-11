@@ -29,3 +29,18 @@ AdGuard Home berfungsi sebagai:
 + ✅ Parental control (opsional)
 + ✅ DNS over HTTPS resolver
 
+## ⚙️ Spesifikasi Server
+### Hardware 
+```text
+OS: Armbian
+Architecture: ARM
+Storage: > 10GB available
+RAM: > 1GB recommended
+```
+### Software 
+```text
+AdGuard Home: Latest version
+Service: systemd managed
+Config Path: /opt/AdGuardHome/AdGuardHome.yaml
+Data Path: /opt/AdGuardHome/data/
+```
