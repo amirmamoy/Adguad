@@ -3,12 +3,22 @@ Version 1.0 • last update: 2025
 
 ## 📋 DAFTAR ISI
 - [Overview](#overview)
+  - [Informasi Server](#informasi-server)
+  - [Purpose](#purpose)
 - [Spesifikasi Server](#spesifikasi-server)
+  - [Hardware](#hardware)
+  - [Software](#software)
 - [Konfigurasi DNS](#konfigurasi-dns)
+  - [Upstream DNS Servers](#upstream-dns-servers)
+  - [Bootstrap DNS](#bootstrap-dns)
+  - [DNS Setting](#dns-setting)
 - [Filter List](#filter-list)
+  - [Active Blocklist](#active-blocklist)
+  - [Update Schedule](#update-schedule)
+  - [Custom Filtering Rules](#custom-filtering-rules)
 - [Monitoring dan Statistik](#monitoring-dan-statistik)
 - [Troubleshooting](#troubleshooting)
-- [Backup & Maintenance](#backup--maintenance)
+- [Backup Dan Maintenance](#backup-dan-maintenance)
 
 ---
 
@@ -229,4 +239,5 @@ Secondary DNS: 1.1.1.1 (fallback)
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
 
