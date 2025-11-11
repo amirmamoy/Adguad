@@ -1,5 +1,8 @@
 # 📚 Dokumentasi Adguad Home Server
-Version 1.0 • last update: 2025
+![Bash](https://img.shields.io/badge/Bash-Script-green)
+![SSH](https://img.shields.io/badge/SSH-Remote-blue)
+![Linux](https://img.shields.io/badge/Linux-Server-orange)
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)
 
 ## 📋 DAFTAR ISI
 - [Overview](#overview)
@@ -241,6 +244,7 @@ Secondary DNS: 1.1.1.1 (fallback)
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
 
 
 
