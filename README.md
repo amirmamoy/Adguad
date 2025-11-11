@@ -16,7 +16,7 @@ Version 1.0 • last update: 2025
   - [Active Blocklist](#active-blocklist)
   - [Update Schedule](#update-schedule)
   - [Custom Filtering Rules](#custom-filtering-rules)
-- [Monitoring dan Statistik](#monitoring-dan-statistik)
+  - [Monitoring dan Statistik](#monitoring-dan-statistik)
 - [Troubleshooting](#troubleshooting)
 - [Backup Dan Maintenance](#backup-dan-maintenance)
 - [Security Setting](#security-setting)
@@ -242,6 +242,7 @@ Secondary DNS: 1.1.1.1 (fallback)
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
 
 
 
