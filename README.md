@@ -1,4 +1,4 @@
-### 📚 Dokumentasi Adguad Home Server
+# 📚 Dokumentasi Adguad Home Server
 Version 1.0 • last update: 2025
 
 ## 📋 DAFTAR ISI
@@ -98,7 +98,6 @@ dns:
 + Auto-update: Enabled
 + Last update: (check web interface)
 ## Custom filtering rules
-# Tambahan rules khusus jika diperlukan
 ```text
 ||doubleclick.net^
 ||googleadservices.com^
@@ -242,6 +241,7 @@ Secondary DNS: 1.1.1.1 (fallback)
 /var/log/syslog
 journalctl -u AdGuardHome
 ```
+
 
 
 
