@@ -21,4 +21,11 @@ Version 1.0 • last update: 2025
 🔧 DNS Port: 53
 📊 Status: Active & Optimal
 ```
-**Purpose**
+### Purpose
+AdGuard Home berfungsi sebagai:
++ ✅ DNS Server jaringan lokal
++ ✅ Pemblokir iklan & tracker
++ ✅ Perlindungan malware & phishing
++ ✅ Parental control (opsional)
++ ✅ DNS over HTTPS resolver
+
