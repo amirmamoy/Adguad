@@ -20,3 +20,5 @@ Version 1.0 • last update: 2025
 🌐 Web Admin: http://192.168.0.103:3000
 🔧 DNS Port: 53
 📊 Status: Active & Optimal
+```
+**Purpose**
